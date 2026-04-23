@@ -1,0 +1,16 @@
+{
+  "common": {
+    "appName": "Beple 钱包",
+    "next": "下一步",
+    "confirm": "确认",
+    "cancel": "取消",
+    "back": "返回"
+  },
+  "onboarding": {
+    "language": {
+      "title": "请选择语言",
+      "subtitle": "Select your language",
+      "cta": "下一步"
+    }
+  }
+}

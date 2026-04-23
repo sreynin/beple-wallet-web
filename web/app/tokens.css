@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Design Tokens — Beple Wallet
+   Source: BPW_beple-wallet/design/tokens.css (Figma 디자인 가이드)
+   DO NOT EDIT HEX VALUES HERE. Edit source and re-sync.
+   ========================================================================== */
+
+:root {
+  /* ================= COLOR — Primitive ================= */
+
+  /* Primary / Blue */
+  --color-blue-500: #0d84ff;
+  --color-blue-400: #4aa9ff;
+  --color-blue-300: #87d5ff;
+  --color-blue-200: #b2e5fc;
+  --color-blue-100: #eef6ff;
+  --color-blue-50: #f5f8ff;
+
+  /* Secondary / Mint */
+  --color-mint-500: #01bcd5;
+  --color-mint-200: #80dea3;
+
+  /* Secondary / Red */
+  --color-red-700: #e70000;
+  --color-red-500: #ff3d01;
+  --color-red-200: #ff8a65;
+
+  /* Secondary / Yellow */
+  --color-yellow-500: #ffa210;
+  --color-yellow-200: #ffd73f;
+
+  /* Grayscale */
+  --color-gray-900: #111111;
+  --color-gray-800: #333333;
+  --color-gray-700: #666666;
+  --color-gray-600: #999999;
+  --color-gray-500: #cccccc;
+  --color-gray-400: #dbdbdb;
+  --color-gray-300: #ededed;
+  --color-gray-200: #f7f7f7;
+  --color-gray-100: #fafafa;
+  --color-white: #ffffff;
+
+  /* ================= COLOR — Semantic ================= */
+  --color-primary: var(--color-blue-500);
+  --color-primary-hover: var(--color-blue-400);
+
+  --color-text-heading: var(--color-gray-900);
+  --color-text-title: var(--color-gray-800);
+  --color-text-body: var(--color-gray-700);
+  --color-text-description: var(--color-gray-600);
+  --color-text-disabled: var(--color-gray-500);
+
+  --color-border-input: var(--color-gray-600);
+  --color-border-input-disabled: var(--color-gray-500);
+  --color-border-divider: var(--color-gray-400);
+  --color-border-card: var(--color-gray-300);
+
+  --color-bg-content-1: var(--color-gray-200);
+  --color-bg-content-2: var(--color-gray-100);
+  --color-bg: var(--color-white);
+  --color-bg-page: var(--color-blue-50);
+
+  --color-error: var(--color-red-700);
+  --color-warning: var(--color-yellow-500);
+
+  /* ================= GRADIENT ================= */
+  --gradient-gray: linear-gradient(136.76deg, #dae0e5 4.17%, #c5ccd3 97.22%);
+  --gradient-blue: linear-gradient(136.76deg, #2a9dff 4.17%, #0d84ff 97.22%);
+
+  /* ================= TYPOGRAPHY ================= */
+  --text-title-2xl-size: 28px;
+  --text-title-xl-size: 24px;
+  --text-title-lg-size: 20px;
+  --text-title-md-size: 18px;
+  --text-title-sm-size: 16px;
+  --text-title-xs-size: 14px;
+
+  --text-body-lg-size: 16px;
+  --text-body-sm-size: 14px;
+  --text-body-xs-size: 12px;
+
+  --text-headline-size: 22px;
+
+  --text-font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+  --text-line-height: 1.4;
+
+  /* ================= BORDER RADIUS ================= */
+  --radius-2xl: 16px;
+  --radius-xl: 12px;
+  --radius-lg: 10px;
+  --radius-md: 8px;
+  --radius-sm: 6px;
+
+  /* ================= BUTTON SIZES ================= */
+  --btn-xl-height: 52px;
+  --btn-lg-height: 48px;
+  --btn-md-height: 40px;
+  --btn-sm-height: 32px;
+  --btn-xs-height: 24px;
+
+  /* ================= INPUT ================= */
+  --input-height: 48px;
+  --input-radius: var(--radius-md);
+
+  /* ================= SHADOW ================= */
+  --shadow-popup: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0px 6px 8px 0px rgba(0, 0, 0, 0.02);
+
+  /* ================= POPUP ================= */
+  --popup-width: 312px;
+  --popup-radius: var(--radius-2xl);
+  --popup-padding-top: 32px;
+  --popup-padding-x: 20px;
+
+  /* ================= DIMMED ================= */
+  --dimmed-bg: var(--color-gray-900);
+  --dimmed-opacity: 0.7;
+}

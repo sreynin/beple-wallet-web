@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* ==========================================================================
+   Tailwind v4 @theme — maps CSS variables to Tailwind utility namespace.
+   After this: bg-primary, text-text-body, rounded-lg, etc. all resolve.
+   ========================================================================== */
+
+@theme {
+  /* Colors */
+  --color-primary: var(--color-blue-500);
+  --color-primary-hover: var(--color-blue-400);
+
+  --color-blue-50: var(--color-blue-50);
+  --color-blue-100: var(--color-blue-100);
+  --color-blue-200: var(--color-blue-200);
+  --color-blue-300: var(--color-blue-300);
+  --color-blue-400: var(--color-blue-400);
+  --color-blue-500: var(--color-blue-500);
+
+  --color-gray-100: var(--color-gray-100);
+  --color-gray-200: var(--color-gray-200);
+  --color-gray-300: var(--color-gray-300);
+  --color-gray-400: var(--color-gray-400);
+  --color-gray-500: var(--color-gray-500);
+  --color-gray-600: var(--color-gray-600);
+  --color-gray-700: var(--color-gray-700);
+  --color-gray-800: var(--color-gray-800);
+  --color-gray-900: var(--color-gray-900);
+
+  --color-text-heading: var(--color-text-heading);
+  --color-text-title: var(--color-text-title);
+  --color-text-body: var(--color-text-body);
+  --color-text-description: var(--color-text-description);
+  --color-text-disabled: var(--color-text-disabled);
+
+  --color-border-input: var(--color-border-input);
+  --color-border-divider: var(--color-border-divider);
+  --color-border-card: var(--color-border-card);
+
+  --color-bg: var(--color-bg);
+  --color-bg-page: var(--color-bg-page);
+  --color-bg-content-1: var(--color-bg-content-1);
+  --color-bg-content-2: var(--color-bg-content-2);
+
+  --color-error: var(--color-error);
+  --color-warning: var(--color-warning);
+
+  /* Radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+
+  /* Font family */
+  --font-sans: var(--text-font-family);
+
+  /* Font sizes (exposed as text-title-lg, text-body-sm, ...) */
+  --text-title-2xl: 28px;
+  --text-title-xl: 24px;
+  --text-title-lg: 20px;
+  --text-title-md: 18px;
+  --text-title-sm: 16px;
+  --text-title-xs: 14px;
+  --text-body-lg: 16px;
+  --text-body-sm: 14px;
+  --text-body-xs: 12px;
+  --text-headline: 22px;
+
+  /* Shadow */
+  --shadow-popup: var(--shadow-popup);
+  --shadow-card: var(--shadow-card);
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--text-font-family);
+  color: var(--color-text-body);
+  background: var(--color-bg-page);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent pull-to-refresh and overscroll on mobile shells */
+html,
+body {
+  overscroll-behavior-y: contain;
+}
+
+/* Disable tap double-zoom on inputs */
+input,
+textarea,
+button {
+  font-family: inherit;
+}

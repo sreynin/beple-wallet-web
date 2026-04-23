@@ -1,0 +1,58 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Claude local settings
+.claude/
+
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Expo / React Native
+.expo/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Native builds
+android_app/**/build/
+ios_app/**/build/
+ios_app/**/Pods/
+ios_app/**/DerivedData/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Coverage / test artifacts
+coverage/
+.nyc_output/
+
+# Misc
+*.tgz

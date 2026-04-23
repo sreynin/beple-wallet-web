@@ -1,0 +1,16 @@
+{
+  "common": {
+    "appName": "Beple Wallet",
+    "next": "Siguiente",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "back": "Atrás"
+  },
+  "onboarding": {
+    "language": {
+      "title": "Selecciona tu idioma",
+      "subtitle": "Select your language",
+      "cta": "Siguiente"
+    }
+  }
+}

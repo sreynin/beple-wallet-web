@@ -1,0 +1,16 @@
+{
+  "common": {
+    "appName": "Beple ウォレット",
+    "next": "次へ",
+    "confirm": "確認",
+    "cancel": "キャンセル",
+    "back": "戻る"
+  },
+  "onboarding": {
+    "language": {
+      "title": "言語を選択してください",
+      "subtitle": "Select your language",
+      "cta": "次へ"
+    }
+  }
+}
