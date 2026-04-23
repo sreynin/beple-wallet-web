@@ -1,5 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
-import type { Locale } from "@/lib/i18n/routing";
+import type { Locale } from "@/lib/i18n/locales";
 import { LanguagePageClient } from "./LanguagePageClient";
 
 type Props = { params: Promise<{ locale: Locale }> };
