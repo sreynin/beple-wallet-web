@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { routing } from "./lib/i18n/routing";
+import { defaultLocale, locales } from "./lib/i18n/locales";
 
 // Custom Edge-safe locale middleware.
 //
@@ -18,7 +18,7 @@ import { routing } from "./lib/i18n/routing";
 
 function pickLocale(req: NextRequest): string {
   const cookieLocale = req.cookies.get("NEXT_LOCALE")?.value;
-  if (cookieLocale && routing.locales.includes(cookieLocale as never)) {
+  if (cookieLocale && locales.includes(cookieLocale as never)) {
     return cookieLocale;
   }
 
@@ -27,12 +27,12 @@ function pickLocale(req: NextRequest): string {
     const tag = part.split(";")[0]?.trim().toLowerCase();
     if (!tag) continue;
     const primary = tag.split("-")[0];
-    if (primary && routing.locales.includes(primary as never)) {
+    if (primary && locales.includes(primary as never)) {
       return primary;
     }
   }
 
-  return routing.defaultLocale;
+  return defaultLocale;
 }
 
 export default function middleware(req: NextRequest) {
@@ -47,7 +47,7 @@ export default function middleware(req: NextRequest) {
   }
 
   // Already locale-prefixed?
-  const hasLocalePrefix = routing.locales.some(
+  const hasLocalePrefix = locales.some(
     (locale) =>
       pathname === `/${locale}` || pathname.startsWith(`/${locale}/`),
   );
